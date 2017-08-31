@@ -41,17 +41,16 @@ uint8_t CRC_Crc8(uint8_t *pArr, uint16_t len)
     return crc;
 }
 
-
 uint16_t CRC_Crc16(uint8_t *pArr, uint16_t len)
 {
-    uint8_t crc = 0xFF;
+    uint16_t crc = 0xFF;
     size_t i;
 
     while (len--)
     {
         crc ^= *pArr++ << 8;
 
-        for (i = 0; i < 8; i++)
+        for (i = 0; i < 16; i++)
             crc = crc & 0x8000 ? (crc << 1) ^ 0x1021 : crc << 1;
     }
     return crc;
