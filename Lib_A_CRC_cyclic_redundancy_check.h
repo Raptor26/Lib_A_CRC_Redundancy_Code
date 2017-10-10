@@ -1,5 +1,5 @@
-#ifndef LIB_A_CRC_CYCLIC_REDUNDANCY_CODE_H
-#define LIB_A_CRC_CYCLIC_REDUNDANCY_CODE_H
+#ifndef LIB_A_CRC_CYCLIC_REDUNDANCY_CHECK_H
+#define LIB_A_CRC_CYCLIC_REDUNDANCY_CHECK_H
 
 //******************************************************************************
 // Секция include (подключаем заголовочные файлы используемых модулей)
