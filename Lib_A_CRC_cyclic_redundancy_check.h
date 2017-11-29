@@ -28,6 +28,8 @@
 // Секция прототипов глобальных функций
 extern uint8_t CRC_XOR_Crc8(uint8_t *pArr, 
         uint16_t len);
+extern uint16_t CRC_XOR_CCITT_Poly0x1021_Crc16( uint8_t *pArr,
+                                                uint16_t len);
 //******************************************************************************
 
 
