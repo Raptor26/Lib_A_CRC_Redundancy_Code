@@ -98,13 +98,13 @@ CRC_XOR_CCITT_Poly0x1021_Crc16 (
   uint8_t *pArr,
   uint16_t len)
 {
-	size_t i;
 	uint16_t crc = 0xFFFF;
 	while (len--)
 	{
 #if defined (__LIB_A_CRC_CRC16_CCITT_TABLE_ON__)
 		crc = (crc << 8) ^ crc16_cciit_table[(crc >> 8) ^ *pArr++];
 #else
+		size_t i;
 		crc ^= *pArr++ << 8;
 		for (i = 0; i < 8; i++)
 		{
